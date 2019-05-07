@@ -12,7 +12,7 @@ import pdb
 
 class EbookPipeline(object):
     def __init__(self):
-        self.db = MySQLdb.connect("localhost", "root", "qinhaoyan945520.", "ebook", charset='utf8')
+        self.db = MySQLdb.connect("localhost", "root", "***", "ebook", charset='utf8')
 
     def process_item(self, item, spider):
         cursor = self.db.cursor()
